@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins",sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-image: url(./Screenshot_6-4-2025_52825_www.aquiltingbee.com.jpeg);
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   
+}
+.container{
+   position:relative;
+   max-width: 700px;
+   width: 100%;
+   padding: 25px;
+   background: black; 
+   border-radius: 8px;
+   box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+.container header{
+    font-size: 1.5rem;
+    color: #F7F7F7;
+    font-weight: 500;
+    text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px; 
+    
+}
+.input-box label{
+    color: #333;
+}
+.form :where( .input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline:none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.input-box input:focus{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color:#F7F7F7;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.gender input{
+    accent-color: aqua;
+}
+.gender label{
+    color:#707070;
+}
+.form :where(.gender-option, .gender label){
+   cursor: pointer;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+.form .column{
+    margin-top: 20px;
+}
+.form button{
+    height: 70px;
+    width: 100%;
+    background-color: #FEBA17;
+    color: #F7F7F7;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+     transition: all 0.2s ease;
+}
+.form button:hover{
+    background-color: #f9d20e;
+}
+.input-box h3{
+    color: #F7F7F7;
+}
+.column h3{
+    color:#F7F7F7;
+}
+.input-box textarea{
+    height: 100px;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 0.15px;
+}
+.r{
+    margin-left: -15px;
+    border-radius: 6px;
+}
+span{
+    color: red;
+}
+.i{
+    height: 75px;
+    margin-left: -500px;
+    
+}
+h1{
+    margin-top: -75px;
+}
+h3{
+    color: #F7F7F7;
+}
+
+@media (max-width:650px) {
+  h1{
+    margin-top: 0;
+  }
+  .i{
+    margin-left: 7px;
+  }
+}
